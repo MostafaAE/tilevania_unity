@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1110945775}
   - component: {fileID: 6035549636272851585}
   - component: {fileID: 1380894524291770743}
+  - component: {fileID: 1263219633}
   m_Layer: 8
   m_Name: Mostafa (Player)
   m_TagString: Untagged
@@ -136,12 +137,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 7597886835384043884}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 13d1dcc1fd4ecd745b4978b8c12c6f6f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.036268532, y: -0.056417704}
-  m_Size: {x: 0.47612107, y: 0.8871646}
+  m_Offset: {x: -0.026717186, y: -0.07074475}
+  m_Size: {x: 0.5525303, y: 0.8585105}
   m_Direction: 0
 --- !u!114 &6035549636272851585
 MonoBehaviour:
@@ -185,6 +186,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d965db586218d6e4d832d36770c0af12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 10
+  playerSpeed: 8
   jumpSpeed: 25
-  climbingSpeed: 10
+  climbingSpeed: 8
+--- !u!61 &1263219633
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597886835384043884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.026266098, y: -0.4465255}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.43169403, y: 0.10694897}
+  m_EdgeRadius: 0
