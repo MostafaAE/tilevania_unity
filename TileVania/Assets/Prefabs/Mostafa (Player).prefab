@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7597886835384043885}
   - component: {fileID: 1110945774}
   - component: {fileID: 1110945775}
+  - component: {fileID: 6035549636272851585}
+  - component: {fileID: 1380894524291770743}
   m_Layer: 0
   m_Name: Mostafa (Player)
   m_TagString: Untagged
@@ -141,3 +143,45 @@ CapsuleCollider2D:
   m_Offset: {x: -0.036268532, y: -0.056417704}
   m_Size: {x: 0.47612107, y: 0.8871646}
   m_Direction: 0
+--- !u!114 &6035549636272851585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597886835384043884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 56d6c4e82a29e544ba1877fd77ff0c07, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1380894524291770743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597886835384043884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d965db586218d6e4d832d36770c0af12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
