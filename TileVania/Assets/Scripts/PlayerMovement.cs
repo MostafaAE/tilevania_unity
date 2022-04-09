@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] float climbingSpeed = 10f;
     [SerializeField] Vector2 deathJump = new Vector2(0f, 30f);
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
 
     bool isAlive = true;
 
@@ -115,6 +117,18 @@ public class PlayerMovement : MonoBehaviour
             
             myRigidbody.velocity = deathJump;
             cameraShake.ShakeCamera(5, 0.5f);
+        }
+    }
+
+    void OnFire(InputValue value)
+    {
+        if (!isAlive) { return; }
+
+        if (value.isPressed)
+        {
+            
+            Instantiate(bullet, gun.position, transform.rotation);
+
         }
     }
 }

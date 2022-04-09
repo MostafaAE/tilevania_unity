@@ -38888,6 +38888,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1747855192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 666578602144582991, guid: 1bac64a9f0cbffd46b22d2aaeb5d6b94, type: 3}
+  m_PrefabInstance: {fileID: 7597886834275346054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2005617166
 GameObject:
   m_ObjectHideFlags: 0
@@ -51374,22 +51379,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1263219633, guid: 1bac64a9f0cbffd46b22d2aaeb5d6b94, type: 3}
-      propertyPath: m_Material
+    - target: {fileID: 1380894524291770743, guid: 1bac64a9f0cbffd46b22d2aaeb5d6b94, type: 3}
+      propertyPath: gun
       value: 
-      objectReference: {fileID: 6200000, guid: 13d1dcc1fd4ecd745b4978b8c12c6f6f, type: 2}
+      objectReference: {fileID: 1747855192}
+    - target: {fileID: 1380894524291770743, guid: 1bac64a9f0cbffd46b22d2aaeb5d6b94, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4539513451636175714, guid: 7177df07950aff04fba03e14b7c0ad64, type: 3}
     - target: {fileID: 1380894524291770743, guid: 1bac64a9f0cbffd46b22d2aaeb5d6b94, type: 3}
       propertyPath: cameraShake
       value: 
       objectReference: {fileID: 1467044177}
-    - target: {fileID: 1380894524291770743, guid: 1bac64a9f0cbffd46b22d2aaeb5d6b94, type: 3}
-      propertyPath: deathJump.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380894524291770743, guid: 1bac64a9f0cbffd46b22d2aaeb5d6b94, type: 3}
-      propertyPath: deathJump.y
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 7597886835384043883, guid: 1bac64a9f0cbffd46b22d2aaeb5d6b94, type: 3}
       propertyPath: m_RootOrder
       value: 2
