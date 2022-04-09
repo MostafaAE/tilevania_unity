@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1263219633}
   m_Layer: 8
   m_Name: Mostafa (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +125,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -963584897
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 1857188551261513057, guid: fe12060e65b9181469adf6d395357415, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -221,6 +221,8 @@ MonoBehaviour:
   jumpSpeed: 25
   climbingSpeed: 8
   deathJump: {x: 0, y: 30}
+  bullet: {fileID: 4539513451636175714, guid: 7177df07950aff04fba03e14b7c0ad64, type: 3}
+  gun: {fileID: 666578602144582991}
   cameraShake: {fileID: 0}
 --- !u!61 &1263219633
 BoxCollider2D:
