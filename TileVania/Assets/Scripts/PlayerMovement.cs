@@ -17,10 +17,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed = 25f;
 
     [SerializeField] float climbingSpeed = 10f;
+    [SerializeField] Vector2 deathJump = new Vector2(0f, 30f);
 
     bool isAlive = true;
 
     float startingGravity;
+
+    [SerializeField] CinemachineShake cameraShake;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         startingGravity = myRigidbody.gravityScale;
+
         
     }
 
@@ -107,6 +111,10 @@ public class PlayerMovement : MonoBehaviour
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
         {
             isAlive = false;
+            myAnimator.SetTrigger("Dying");
+            
+            myRigidbody.velocity = deathJump;
+            cameraShake.ShakeCamera(5, 0.5f);
         }
     }
 }
