@@ -34,8 +34,6 @@ public class PlayerMovement : MonoBehaviour
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         startingGravity = myRigidbody.gravityScale;
-
-        
     }
 
     // Update is called once per frame
@@ -117,8 +115,10 @@ public class PlayerMovement : MonoBehaviour
             
             myRigidbody.velocity = deathJump;
             cameraShake.ShakeCamera(5, 0.5f);
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
+
 
     void OnFire(InputValue value)
     {
